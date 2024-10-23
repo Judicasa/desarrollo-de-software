@@ -83,7 +83,7 @@
                       <input type="radio" name="p10" value="B"> b Tener libertad para experimentar y proponer nuevas ideas.
                   </div>
           
-                  <button type="button" onclick="calculateResult()">Ver resultado</button>
+                  <button type="button" onclick="calcularResultado()">Ver resultado</button>
               </form>
               <div id="result" class="result"></div>
             </div>
@@ -91,10 +91,10 @@
           </div>
         </div>
         <script>
-          function calculateResult() {
+          function calcularResultado() {
             const form = document.forms['quizForm'];
-            let scoreA = 0;
-            let scoreB = 0;
+            let rA = 0;
+            let rB = 0;
       
             for (let i = 1; i <= 10; i++) {
               const answer = form[`p${i}`].value;
@@ -106,9 +106,9 @@
             }
       
             let resultText = '';
-            if (scoreA > scoreB) {
+            if (rA > rB) {
               resultText = "Predomina tu hemisferio izquierdo. Eres más lógico y analítico.";
-            } else if (scoreB > scoreA) {
+            } else if (rB > rA) {
               resultText = "Predomina tu hemisferio derecho. Eres más creativo y emocional.";
             } else {
               resultText = "Usas ambos hemisferios de manera equilibrada.";
