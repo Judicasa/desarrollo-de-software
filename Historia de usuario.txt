@@ -1,0 +1,3 @@
+Como usuario,
+quiero acceder a una herramienta en línea que me permita realizar ejercicios y cuestionarios que identifiquen qué partes de mi cerebro utilizo más,
+para poder conocer mejor mis habilidades cognitivas y mejorar mi aprendizaje y toma de decisiones.
